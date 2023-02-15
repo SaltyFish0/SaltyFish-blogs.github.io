@@ -1,0 +1,5 @@
+@import url("public.css");
+
+/* 大于1300px时使用 */
+@import url("big/big.css") only screen and (min-width:780px);
+@import url("small-x/small-x.css") only screen and (max-width:780px);

@@ -1,0 +1,185 @@
+/* Creator-SaltyFish
+QQ3121713453 */
+* {
+	line-height: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+body {}
+
+.container {
+	width: 99.9vw;
+	height: 99.7vh;
+	background: #000;
+	/* 14s */
+	/* animation: change-container 1s forwards 14s; */
+}
+
+.row {
+	margin-top: 2px;
+	width: 100%;
+	height: 42px;
+	display: flex;
+
+}
+
+.row div:nth-child(2) {
+	margin: 0 .3em;
+}
+
+.font-public {
+	margin-left: .4em;
+	line-height: 42px;
+	color: #FFF;
+	font-size: 1em;
+}
+
+.front {
+	margin-left: .4em;
+	line-height: 42px;
+	color: #FF0000;
+	font-size: 1em;
+}
+
+.text {
+	position: relative;
+}
+
+.end {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 38px;
+	border-left: 6px solid #00FF00;
+	background: #000;
+
+
+}
+
+.name1 .end {
+	animation:
+		change-t .5s steps(3, start) forwards 1s;
+}
+
+.name2 .end {
+	animation:
+		change-t 2s steps(12, start) forwards 3s;
+}
+
+.name3 .end {
+	animation:
+		change-t 1.6s steps(10, start) forwards 6s;
+}
+
+.name4 .end {
+	animation:
+		change-t 4s steps(50, start) forwards 8s;
+}
+
+.name5 .end {
+	animation:
+		change-t 1.2s steps(8, start) forwards 13s;
+}
+
+.name6 .end {
+	animation:
+		change-t .3s steps(2, start) forwards 14.7s;
+}
+
+[class^="default"] {
+	transform: scale(0);
+}
+
+.default1 {
+	animation: default-d 1s steps(1, start) forwards 2s;
+}
+
+.default2 {
+	animation: default-d 1s steps(1, start) forwards 5.3s;
+}
+
+.default3 {
+	animation: default-d 1s steps(1, start) forwards 7.5s;
+}
+
+.default4 {
+	animation: default-d 1s steps(1, start) forwards 12.5s;
+}
+
+.default5 {
+	animation: default-d 1s steps(1, start) forwards 14.3s;
+}
+
+@keyframes change-t {
+
+	0%,
+	10%,
+	20%,
+	30%,
+	40%,
+	50%,
+	60%,
+	70%,
+	80%,
+	90% {
+		border-left: 6px solid #00FF00;
+	}
+
+	100% {
+		border-left: none;
+		transform: translateX(100%);
+	}
+}
+
+@keyframes change-container {
+	100% {
+		/* transform: scale(0); */
+		/* transform-origin: left center; */
+	}
+}
+
+@keyframes change-welcome {
+	100% {
+		transform: scale(1);
+		/* transform-origin: right center; */
+		/* opacity: 1; */
+	}
+}
+
+@keyframes default-d {
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+
+.welcome {
+	/* 17s */
+	animation: change-welcome 1s forwards 15s;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(90deg, rgb(0, 191, 255), rgb(179, 254, 255));
+
+}
+.welcome div{
+	width: 250px;
+	height: 250px;
+	/* background: #fff; */
+	font-size: 10em;
+	line-height: 250px;
+	text-align: center;
+}
