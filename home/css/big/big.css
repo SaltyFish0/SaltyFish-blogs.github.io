@@ -11,15 +11,12 @@ body {
   background-image: linear-gradient(90deg, #00bfff, #b3feff);
   user-select: none;
 }
-body .container-pe {
-  display: none;
-}
-body .container-pc {
+body .container {
   width: 1314px;
   height: 100vh;
   margin: auto;
 }
-body .container-pc header {
+body .container header {
   position: fixed;
   top: 0%;
   left: 0%;
@@ -32,23 +29,23 @@ body .container-pc header {
   align-items: center;
   z-index: 1;
 }
-body .container-pc header nav {
+body .container header nav {
   width: 1314px;
   height: 80px;
   display: flex;
   align-items: center;
 }
-body .container-pc header nav .win {
+body .container header nav .win {
   display: none;
 }
-body .container-pc header nav .logo {
+body .container header nav .logo {
   width: 250px;
   height: 100%;
   line-height: 60px;
   text-align: center;
   border-right: 1px solid #ddd;
 }
-body .container-pc header nav .logo p {
+body .container header nav .logo p {
   font-weight: 200;
   width: 100px;
   height: 100%;
@@ -56,7 +53,7 @@ body .container-pc header nav .logo p {
   line-height: 60px;
   position: relative;
 }
-body .container-pc header nav .logo p::before {
+body .container header nav .logo p::before {
   position: absolute;
   top: 16px;
   right: 90px;
@@ -67,7 +64,7 @@ body .container-pc header nav .logo p::before {
   background: url(../../../src/img/sfz.png);
   background-size: 100% 100%;
 }
-body .container-pc header nav .logo p::after {
+body .container header nav .logo p::after {
   position: absolute;
   bottom: 32px;
   left: 14px;
@@ -77,15 +74,15 @@ body .container-pc header nav .logo p::after {
   font-size: 0.6em;
   font-style: italic;
 }
-body .container-pc header nav ul {
+body .container header nav ul {
   display: flex;
   margin-left: 100px;
 }
-body .container-pc header nav ul li {
+body .container header nav ul li {
   margin-right: 20px;
   box-shadow: 0px 5px 40px 0px rgba(17, 58, 93, 0.1);
 }
-body .container-pc header nav ul li a {
+body .container header nav ul li a {
   color: #000;
 }
 body .slideshow {
@@ -116,7 +113,7 @@ body .slideshow h1::after {
   top: 144px;
   left: 176px;
   font-size: 0.6em;
-  content: "路阻且长，上下而求索";
+  content: "路阻且长，行则将至。";
 }
 body main {
   margin-top: 30px;

@@ -366,15 +366,112 @@ h1::after {
     font-size: 1.6em;
   }
 }
+.public {
+  background: #FFF;
+  border-radius: 12px;
+}
 @media screen and (min-width: 1000px) {
-  body {
+  * {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    user-select: none;
+  }
+  body {
+    margin: 100px auto;
+    padding: 0;
+    max-width: 1260px;
     height: 100vh;
-    background: var(--ContainerColor);
+    background-image: linear-gradient(90deg, #00bfff, #b3feff);
   }
   body #app {
+    width: 100%;
+    height: 100%;
+  }
+  body #app header {
     display: none;
+  }
+  body #app main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+  body #app main .container-m1 {
+    width: 96%;
+    height: 96%;
+    padding: 0 10px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-rows: 0.8fr 0.8fr 1fr;
+    gap: 1em;
+    background: #FFF;
+    border-radius: 12px;
+  }
+  body #app main .container-m1 .m1-top .portrait {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  body #app main .container-m1 .m1-top .portrait img {
+    width: 60%;
+    height: 80%;
+  }
+  body #app main .container-m1 .m1-middle h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+  body #app main .container-m1 .m1-middle .relation {
+    display: none;
+  }
+  body #app main .container-m1 .m1-middle .message {
+    height: 100%;
+    margin: 10px;
+  }
+  body #app main .container-m1 .m1-middle .message ul {
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+  }
+  body #app main .container-m1 .m1-bottom .m1-bottom-t h1 {
+    display: none;
+  }
+  body #app main .container-m1 .m1-bottom .m1-bottom-t p {
+    font-size: 1.1em;
+  }
+  body #app main .container-m2 {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 40px;
+    background: #FFF;
+    border-radius: 12px;
+  }
+  body #app main .container-m2 .m2-top .m2-top-s {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  body #app main .container-m2 .m2-top .m2-top-s .content p:nth-child(2) {
+    width: 80%;
+    border-bottom: 1px solid #000;
+  }
+  body #app main .container-m3 {
+    width: 100%;
+    height: 100%;
+    margin: 40px 0 0 40px;
+    background: #FFF;
+    border-radius: 12px;
+  }
+  body #app main .container-m3 .m3-s {
+    margin-left: 10px;
+  }
+  body #app main .container-m3 .m3-s .school {
+    margin-top: 10px;
   }
 }
